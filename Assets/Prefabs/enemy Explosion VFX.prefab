@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3200836327345539235}
   - component: {fileID: 3200836327345539236}
   - component: {fileID: 3200836327345539237}
-  - component: {fileID: 5800290407963572845}
+  - component: {fileID: 8052452512395456920}
   m_Layer: 0
-  m_Name: enemy Explosion VFX
+  m_Name: Enemy Explosion VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,11 +226,11 @@ ParticleSystem:
       maxColor: {r: 0, g: 0.5283019, b: 0.4470546, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.74509805, g: 0.08455677, b: 0, a: 1}
-        key1: {r: 0.97186315, g: 1, b: 0.3607843, a: 1}
-        key2: {r: 0.6117647, g: 0.07903773, b: 0, a: 1}
-        key3: {r: 0.6320754, g: 0.26193088, b: 0.0029814949, a: 0}
-        key4: {r: 0.9622642, g: 0.6355053, b: 0, a: 0}
+        key0: {r: 0.6415094, g: 0.15372016, b: 0.18812482, a: 1}
+        key1: {r: 1, g: 0.9326874, b: 0.3607843, a: 1}
+        key2: {r: 0.6117647, g: 0, b: 0.079780355, a: 1}
+        key3: {r: 0.6037736, g: 0.19218212, b: 0.13328585, a: 0}
+        key4: {r: 0.9811321, g: 0.61313015, b: 0, a: 0}
         key5: {r: 0, g: 0.31986684, b: 0.6226415, a: 0}
         key6: {r: 0, g: 0.31986684, b: 0.6226415, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
@@ -4768,7 +4768,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d35ef6f3684e9d140bad0bdf59df8a59, type: 2}
-  - {fileID: 2100000, guid: 03d3e718b8306fa47a1cba840ea273d2, type: 2}
+  - {fileID: 2100000, guid: 1bc74a47a011c684a825a60ae18017b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4814,7 +4814,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &5800290407963572845
+--- !u!114 &8052452512395456920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4823,6 +4823,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3200836327345539238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 605dd99f307c2e94f9e62d831c7500a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cc0d121ec417ab4db70990aacc00682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeTillDestroy: 3
