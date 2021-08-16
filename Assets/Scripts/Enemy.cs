@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 15;
-    [SerializeField] int hitPoints = 4;
+    [SerializeField] int hitPoints = 1;
 
     ScoreBoard scoreBoard;
     GameObject parentGameObject;
@@ -39,14 +39,14 @@ public class Enemy : MonoBehaviour
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
         hitPoints--;
-        
+        Debug.Log("I'm hit");
     }
 
     void KillEnemy()
     {
-        GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parentGameObject.transform;
-        Destroy(gameObject);
         scoreBoard.IncreaseScore(scorePerHit);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parentGameObject.transform;
+        Destroy(gameObject);
     }    
 }

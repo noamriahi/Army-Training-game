@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3200836327345539236}
   - component: {fileID: 3200836327345539237}
   - component: {fileID: 8052452512395456920}
-  - component: {fileID: 880892486655298252}
+  - component: {fileID: 3898542870650614253}
   m_Layer: 0
-  m_Name: enemy Explosion VFX & SFX
+  m_Name: Enemy Explosion VFX & SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4828,7 +4828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTillDestroy: 3
---- !u!82 &880892486655298252
+--- !u!82 &3898542870650614253
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4838,7 +4838,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f197b7a47cc9d974690a01e92dda8dbf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d301bb30a3583c743ad01d396fa3c843, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
